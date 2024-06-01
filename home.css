@@ -1,0 +1,448 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  background-color: #000;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.light-mode {
+  background-color: #fff;
+  color: #000;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #000;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  transition: background-color 0.5s;
+}
+
+.thelogoman{
+    width: 80px;
+}
+header.light-mode {
+  background-color: #fff;
+}
+
+header .logo {
+  font-size: 24px;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  margin-right: 20px;
+}
+
+/* header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.5s;
+} */
+/* Base style for the underline */
+header nav ul li a {
+    position: relative; /* Make the anchor tag a positioned element */
+    color: #fff; /* Default color of the link text */
+    text-decoration: none; /* Remove the default underline */
+}
+
+/* Stylish underline animation */
+header nav ul li a::before,
+header nav ul li a::after {
+    content: ''; /* Required for pseudo-elements */
+    position: absolute; /* Position the pseudo-elements */
+    bottom: 0; /* Align the pseudo-elements at the bottom of the link */
+    width: 0; /* Initial width of the pseudo-elements */
+    height: 2px; /* Height of the underline */
+    background-color: #0f0; /* Color of the underline */
+    transition: width 0.3s; /* Smooth transition for the width change */
+}
+
+/* Animation when hovering over the link */
+header nav ul li a:hover::before,
+header nav ul li a:hover::after {
+    width: 50%; /* Increase the width to 50% on hover */
+}
+
+/* Positioning the pseudo-elements */
+header nav ul li a::before {
+    left: 0; /* Align the pseudo-element to the left */
+}
+
+header nav ul li a::after {
+    right: 0; /* Align the pseudo-element to the right */
+}
+
+
+header.light-mode nav ul li a {
+  color: #000;
+}
+
+header .header-icons {
+  display: flex;
+  align-items: center;
+  margin-right: 8%;
+}
+header .get-in-touch {
+  position: relative; /* Required for the pseudo-element */
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 20px;
+  overflow: hidden; /* Ensure overflow is hidden */
+}
+
+header .get-in-touch::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: linear-gradient(to top right, #0f0 0%, #0f0 100%);
+  transition: width 0.4s ease-out; /* Animation transition */
+  z-index: -1; /* Place the pseudo-element behind the text */
+}
+
+header .get-in-touch:hover::before {
+  width: 100%; /* Expand the pseudo-element on hover */
+}
+
+  
+
+header.light-mode .get-in-touch {
+  color: #000;
+  border-color: #000;
+}
+
+header .theme-toggle {
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: url("hero-bg.jpg") no-repeat center center/cover;
+  transition: background-image 0.5s;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin: 0 0 20px;
+}
+
+.hero p {
+  font-size: 18px;
+}
+
+/* Clients Section */
+.clients {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.clients h2 {
+  margin-bottom: 10px;
+}
+
+.client-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2%;
+}
+
+.client-logos i:hover {
+  color: #0f0; /* Changing the color of the icon on hover */
+  transform: rotate3d(1, 1, 1, -45deg); /* Adding a rotation effect */
+}
+
+.client-logos i {
+  font-size: 3.8rem;
+  margin: 10px;
+  width: 100px;
+  transition: transform 0.3s;
+}
+
+.client-logos img:hover {
+  transform: scale(1.1);
+}
+
+/* About Section */
+.about {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #111;
+  transition: background-color 0.5s;
+}
+
+.about.light-mode {
+  background-color: #eee;
+}
+
+.about h2 {
+  margin-bottom: 10px;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-content p {
+  margin-bottom: 20px;
+}
+
+.about .stats {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.about .stat {
+  text-align: center;
+}
+
+.about .stat h3 {
+  font-size: 24px;
+  margin: 0;
+}
+
+/* Services Section */
+.services {
+  padding: 50px 20px;
+  background-color: #222;
+  transition: background-color 0.5s;
+}
+.social-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.social-links a i {
+  font-size: 20px;
+}
+
+.social-links a:hover {
+  color: #0073e6;
+}
+.services.light-mode {
+  background-color: #ddd;
+}
+
+.services h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.service {
+  max-width: 800px;
+  margin: 0 auto 20px;
+  padding: 20px;
+  background-color: #333;
+  transition: background-color 0.5s;
+}
+
+.service.light-mode {
+  background-color: #ccc;
+}
+
+.service h3 {
+  margin-bottom: 10px;
+}
+
+.service p {
+  margin-bottom: 10px;
+}
+
+.service ul {
+  list-style: none;
+  padding: 0;
+}
+
+.service ul li {
+  margin-bottom: 5px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.service ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #0f0;
+}
+
+/* Portfolio Section */
+.portfolio {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.portfolio-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.portfolio-item {
+  width: calc(33.333% - 20px);
+  margin: 10px;
+  transition: transform 0.3s;
+}
+/* View Live Button */
+.view-live {
+  display: inline-block;
+  background-color: #0f0; /* Change to your desired button color */
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  margin-bottom: 5%;
+}
+
+.view-live:hover {
+  background-color: #0056b3; /* Change to your desired button hover color */
+}
+
+.portfolio-item:hover {
+  transform: scale(0.9);
+  border: 2px #0f0;
+}
+
+.portfolio-item img {
+  width: 80%;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+.portfolio-item:hover img {
+  transform: scale(1.2);
+}
+.portfolio-item img :hover {
+  transform: scale(0.9);
+}
+.portfolio-item img :hover .portfolio-item {
+  transform: scale(1.2);
+}
+
+/* Contact Section */
+.contact {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #111;
+  transition: background-color 0.5s;
+}
+
+.contact.light-mode {
+  background-color: #eee;
+}
+
+.contact h2 {
+  margin-bottom: 20px;
+}
+
+.contact a,
+.contact button {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background-color: #0f0;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact.light-mode a,
+.contact.light-mode button {
+  color: #000;
+  background-color: #0f0;
+}
+
+.contact a:hover,
+.contact button:hover {
+  background-color: #090;
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #000;
+}
+
+footer .social-links {
+  margin: 10px 0;
+}
+
+footer .social-links a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+footer .social-links a:hover {
+  color: #0f0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .portfolio-item {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolio-item {
+    width: 100%;
+  }
+
+  header nav ul {
+    display: none;
+  }
+
+  header .menu-toggle {
+    display: block;
+  }
+
+  header .menu-toggle.active + nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+}

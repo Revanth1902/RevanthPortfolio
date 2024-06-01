@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revanth Portfolio</title>
+    <link rel="icon" type="image/png" href="ROLLOGO.png">
+    <link rel="stylesheet" href="home.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+
+</head>
+
+<body>
+    <header>
+        <div class="logo"><img class="thelogoman"  src="ROLLOGO.png" alt="logo"/></div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Service</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-icons">
+            <a href="#contact" class="get-in-touch">Get in Touch</a>
+            <div class="theme-toggle" id="theme-toggle" onclick="toggleTheme()">🌙</div>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 style="color: #0f0;">Siriki Revanth</h1>
+            <p>Hello, my name is Siriki Revanth, nice to meet you! I would like to welcome you to my personal portfolio.</p>
+        </div>
+    </section>
+
+    <section class="clients">
+        <h2 style="color: #0f0;">My Skills</h2>
+        <p>Gained Skills at Every Posible Way </p>
+        <div class="client-logos">
+            <i class="fab fa-react" title="React"></i>
+            <i class="fab fa-node" title="Node.js"></i>
+            <i class="fab fa-github" title="GitHub"></i>
+            <i class="fab fa-css3-alt" title="Tailwind CSS"></i> <!-- Assuming Tailwind CSS uses CSS3 -->
+            <i class="fab fa-bootstrap" title="Bootstrap"></i>
+            <i class="fab fa-python" title="Python"></i>
+            <i class="fab fa-java" title="Java"></i>
+        </div>
+        
+    </section>
+
+    <section id="about" class="about">
+        <h2 style="color: #0f0;">About Me</h2>
+        <p>I can deliver results that exceed your expectations.</p>
+      
+        <section  class="contact">
+            
+            <a href="#contact" class="get-in-touch">Hire Me Now</a>
+        </section>
+
+        <div class="about-content">
+           
+    <p>Hello, I'm  Revanth, currently residing in Vizag. With 8 months of professional experience as a React developer, I've had the opportunity to delve into various technologies and frameworks.</p>
+    <p>I'm proficient in React, Node.js, GitHub, Tailwind CSS, Material UI, Bootstrap, Python, and Java. My journey in the field of technology began with a diploma in Computer Engineering, where I gained foundational knowledge and skills.</p>
+    <p>Throughout my career, I've successfully completed numerous projects, each contributing to my growth and expertise. I'm passionate about leveraging technology to create innovative solutions that make a positive impact.</p>
+            <div class="stats">
+                <div class="stat">
+                    <h3>10+</h3>
+                    <p>Project Complete</p>
+                </div>
+                <div class="stat">
+                    <h3>5+</h3>
+                    <p>World Clients</p>
+                </div>
+                <div class="stat">
+                    <h3>8+</</h3>
+                    <p>Months Experience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <h2 style="color: #0f0;">Services Offered</h2>
+        <div class="service">
+            <h3>01. Web Design & Development</h3>
+            <p>Crafting visually stunning and responsive websites optimized for all devices. From concept to execution, ensuring a seamless user experience.</p>
+            <ul>
+                <li>UI/UX Design</li>
+                <li>Responsive Design</li>
+                <li>Frontend Development</li>
+                <li>Backend Development</li>
+            </ul>
+        </div>
+        <div class="service">
+            <h3>02. Complex Project Development</h3>
+            <p>Handling and delivering complex projects with precision and expertise. From ideation to deployment, ensuring robust and scalable solutions.</p>
+            <ul>
+                <li>Full-stack Development</li>
+                <li>Database Management</li>
+                <li>Version Control (GitHub)</li>
+                <li>Continuous Integration/Continuous Deployment (CI/CD)</li>
+            </ul>
+        </div>
+    </section>
+    
+
+    <section id="portfolio" class="portfolio">
+        <h2 style="color: #0f0;">Selected Works 2023 - 2024</h2>
+        <div class="portfolio-items">
+            <div class="portfolio-item">
+                <img src="rolmusic1.png" alt="ROL Music">
+                <div class="project-description">
+                    <h3>ROL Music</h3>
+                    <p>ROL Music is a dynamic music streaming platform designed to deliver an immersive listening experience. With personalized playlists, curated content, and seamless integration across devices, it redefines the way users enjoy music.</p>
+                    <a href="https://rolmusic.vercel.app" target="_blank" rel="noopener noreferrer" class="view-live"><i class="fas fa-external-link-alt"></i> View Live</a>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="newecommerce.png" alt="S2 Ecommerce Admin Dashboard">
+                <div class="project-description">
+                    <h3>S2 Ecommerce Admin Dashboard</h3>
+                    <p>The admin dashboard for S2 Ecommerce provides comprehensive tools and features to manage the online shopping platform efficiently. With intuitive data visualization, inventory management, and user analytics, it empowers administrators to make informed decisions and optimize the platform's performance.</p>
+                    <a href="https://new-ecommercebyioninks.vercel.app" target="_blank" rel="noopener noreferrer" class="view-live"><i class="fas fa-external-link-alt"></i> View Live</a>
+                </div>
+            </div>
+            
+            
+            <div class="portfolio-item">
+                <img src="bmsclone.png" alt="Bookmyshow Clone">
+                <div class="project-description">
+                    <h3>Bookmyshow Clone</h3>
+                    <p>Bookmyshow Clone is a replica of the popular ticket booking platform, offering users the convenience of booking tickets for movies, events, and shows online. With features like seat selection, real-time availability, and secure payment options, it brings the cinema experience to the user's fingertips.</p>
+                    <a href="https://bmsclone.vercel.app" target="_blank" rel="noopener noreferrer" class="view-live"><i class="fas fa-external-link-alt"></i> View Live</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <section id="contact" class="contact">
+        <h2 style="color: #0f0;">Let's talk to Collaboration</h2>
+        <a href="#contact" class="get-in-touch">Get in Touch</a>
+        <a href="#contact" class="get-in-touch">Hire Me Now</a>
+    </section>
+
+    <footer>
+        <p>&copy; Siriki Revanth. All rights reserved 2024</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/i_am_revanth19/" aria-label="Instagram"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="https://www.facebook.com/profile.php?id=100073876999943&mibextid=ZbWKwL" aria-label="Facebook"><i class="fab fa-facebook-f"></i> Facebook</a>
+            <a href="https://x.com/REVANTH19r?t=jf0NpF-AgrH6Db8xNWo5JA&s=09" aria-label="Twitter"><i class="fab fa-twitter"></i> Twitter</a>
+            <a href="www.linkedin.com/in/
+            revanth-siriki-b659b92bb
+            " aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+        </div>
+        
+    </footer>
+
+    <script src="home.js"></script>
+</body>
+
+</html>
